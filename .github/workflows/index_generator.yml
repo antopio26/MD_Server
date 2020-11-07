@@ -3,7 +3,7 @@ name: Update index.json
 on:
   push:
     paths:
-      - 'bacheca/**'
+      - 'bacheca/**.md'
 
 jobs:
   Update-Index:
