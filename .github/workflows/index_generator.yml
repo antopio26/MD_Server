@@ -1,0 +1,15 @@
+name: Update Index.js
+
+on:
+  push:
+    paths: [ bacheca ]
+
+jobs:
+  read_article_info:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: node hello.js
