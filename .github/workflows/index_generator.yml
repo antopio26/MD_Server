@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - uses: actions/update-index@v1
+      - uses: antopio26/update-index@v1
         with:
           path: 'bacheca'
