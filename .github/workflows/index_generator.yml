@@ -20,3 +20,9 @@ jobs:
           added: ${{ steps.file_changes.outputs.files_added }}
           removed: ${{ steps.file_changes.outputs.files_removed }}
           modified: ${{ steps.file_changes.outputs.files_modified }}
+      - name: Push repository
+        run: |
+          git status
+          git add .
+          git commit -m "Auto Update index.json files"
+          git push
