@@ -6,7 +6,7 @@ on:
       - 'bacheca/**'
 
 jobs:
-  read_article_info:
+  Update-Index:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,6 +17,4 @@ jobs:
         uses: trilom/file-changes-action@v1.2.4
       - uses: antopio26/update-index@v1.1
         with:
-          path: ${{steps.file_changes.outputs.files}}
-      - name: Print files
-        run: echo "${{steps.file_changes.outputs.files}}"
+          paths: ${{steps.file_changes.outputs.files}}
