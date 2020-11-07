@@ -2,7 +2,8 @@ name: Update Index.js
 
 on:
   push:
-    paths: [ bacheca ]
+    paths:
+      - 'bacheca/**'
 
 jobs:
   read_article_info:
