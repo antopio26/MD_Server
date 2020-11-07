@@ -1,1 +1,1 @@
-print("hello I am a nodejs app");
+console.log("hello I am a nodejs app");
