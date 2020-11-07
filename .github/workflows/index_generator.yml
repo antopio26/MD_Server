@@ -16,4 +16,6 @@ jobs:
       - uses: trilom/file-changes-action@v1.2.4
       - uses: antopio26/update-index@v1.1
         with:
-          path: ${steps.file_changes.outputs.files}
+          path: ${{steps.file_changes.outputs.files}}
+      - name: Print files
+        run: echo "${{steps.file_changes.outputs.files}}"
