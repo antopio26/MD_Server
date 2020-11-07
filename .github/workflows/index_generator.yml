@@ -20,9 +20,13 @@ jobs:
           added: ${{ steps.file_changes.outputs.files_added }}
           removed: ${{ steps.file_changes.outputs.files_removed }}
           modified: ${{ steps.file_changes.outputs.files_modified }}
-      - name: Push repository
+      - name: Commit files
         run: |
-          git status
-          git add .
-          git commit -m "Auto Update index.json files"
-          git push
+          git config --local user.email "antoniopio.maggio@live.it"
+          git config --local user.name "antopio26"
+          git commit -m "Auto Update index.json" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
