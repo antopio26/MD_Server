@@ -15,7 +15,7 @@ jobs:
           node-version: 12
       - id: file_changes
         uses: trilom/file-changes-action@v1.2.4
-      - uses: antopio26/update-index@v1.4.0
+      - uses: antopio26/update-index@v1.4.1
         with:
           added: ${{ steps.file_changes.outputs.files_added }}
           removed: ${{ steps.file_changes.outputs.files_removed }}
