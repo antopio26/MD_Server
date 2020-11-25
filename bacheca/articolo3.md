@@ -10,4 +10,4 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 My favorite search engine is [Google](https://google.com "The best search engine").
 
-![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")
+![Bari](https://raw.githubusercontent.com/antopio26/MD_Server/main/assets/lampioni%20lungomare%20bari.jpg "Philadelphia's Magic Gardens")
