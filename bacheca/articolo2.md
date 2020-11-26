@@ -8,6 +8,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 **Lista**:
 - Elemento 1
-- elemento 2
+- Elemento 2
 
 My favorite search engine is [Google](https://google.com "The best search engine").
