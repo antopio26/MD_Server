@@ -10,4 +10,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 My favorite search engine is [Google](https://google.com "The best search engine").
 
-![Bari](../assets/lampioni%20lungomare%20bari.jpg "Bari")
+![Bari](https://raw.githubusercontent.com/antopio26/MD_Server/main/assets/lampioni%20lungomare%20bari.jpg "Bari")
