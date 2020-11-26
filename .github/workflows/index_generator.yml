@@ -21,12 +21,14 @@ jobs:
           removed: ${{ steps.file_changes.outputs.files_removed }}
           modified: ${{ steps.file_changes.outputs.files_modified }}
       - name: Commit files
+        continue-on-error: true
         run: |
           git config --local user.email "antoniopio.maggio@live.it"
           git config --local user.name "antopio26"
           git add *.json
           git commit -m "Auto Update index.json" -a
       - name: Push changes
+        continue-on-error: true
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
